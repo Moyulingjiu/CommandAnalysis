@@ -7,10 +7,12 @@ import java.lang.annotation.Target;
 
 /**
  * 命令服务类注解
+ * <p>
+ * 有该注解注解的类，表示需要扫描
  *
  * @author 墨羽翎玖
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.PACKAGE)
+@Target(ElementType.TYPE)
 public @interface CommandService {
 }

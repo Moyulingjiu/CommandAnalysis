@@ -6,12 +6,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 命令注解
+ * 指定包扫描路径
  *
  * @author 墨羽翎玖
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
-public @interface Command {
-    String id();
+@Target(ElementType.TYPE)
+public @interface CommandScan {
+    String[] path();
 }

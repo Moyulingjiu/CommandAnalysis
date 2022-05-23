@@ -6,4 +6,12 @@ package com.moyulingjiu;
  * @author 墨羽翎玖
  */
 public class CommandSchedulerFactory {
+
+    public static CommandScheduler start(Class<?> clazz) {
+        return new CommandScheduler();
+    }
+
+    public static CommandScheduler start(String path) {
+        return new CommandScheduler();
+    }
 }
