@@ -8,10 +8,6 @@ package com.moyulingjiu;
 public class CommandSchedulerFactory {
 
     public static CommandScheduler start(Class<?> clazz) {
-        return new CommandScheduler();
-    }
-
-    public static CommandScheduler start(String path) {
-        return new CommandScheduler();
+        return new CommandScheduler(clazz);
     }
 }

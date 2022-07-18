@@ -1,7 +1,7 @@
 package com.moyulingjiu.tag;
 
-import com.moyulingjiu.checker.Checker;
-import com.moyulingjiu.checker.DefaultChecker;
+import com.moyulingjiu.checker.CommandChecker;
+import com.moyulingjiu.checker.DefaultCommandChecker;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -16,5 +16,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface CommandCheck {
-    Class<? extends Checker> checker() default DefaultChecker.class;
+    Class<? extends CommandChecker> checker() default DefaultCommandChecker.class;
 }
